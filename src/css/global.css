@@ -50,6 +50,10 @@ button {
   margin: 0 auto;
 }
 
+.row {
+  width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -61,4 +65,22 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
 }
