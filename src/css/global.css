@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   background: var(--color-white);
   color: var(--color-40);
   margin: 0;
@@ -70,18 +70,19 @@ button {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 335px;
+    width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 728px;
+    padding: 0 32px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1240px;
+    width: 1280px;
   }
 }
