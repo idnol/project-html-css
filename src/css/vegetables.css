@@ -225,6 +225,15 @@
     line-height: 24px;
     letter-spacing: -0.72px;
   }
+
+  .vegetables-button {
+    width: 114px;
+    height: 114px;
+
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+  }
 }
 
 /* ----------------------SECTION-VEGATABLES-DESKTOP------------------------ */
