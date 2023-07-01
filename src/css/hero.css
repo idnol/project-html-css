@@ -3,8 +3,6 @@
   padding-bottom: 20px;
   background-color: var(--color-35);
 }
-.hero-top {
-}
 .user-list {
   display: flex;
   margin-bottom: 14px;
@@ -19,10 +17,6 @@
 }
 .user-item:first-child {
   margin-left: 0;
-}
-.user-img-tab {
-}
-.user-img {
 }
 .user-text-wrap {
   width: 100%;
@@ -114,8 +108,6 @@
   gap: 4px;
   max-width: 172px;
   margin-left: auto;
-}
-.hashtag-item {
 }
 .hashtag-btn {
   border-radius: 1000px;
