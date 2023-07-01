@@ -180,8 +180,6 @@
 }
 
 .vegetables-button-icon {
-  margin-right: 4px;
-  fill: var(--color-white);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -196,7 +194,7 @@
 .vegetables-button-name {
   transform: rotate(-14deg);
   position: absolute;
-  left: 18px;
+  right: 0;
   bottom: 4px;
 }
 
