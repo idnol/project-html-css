@@ -1,5 +1,9 @@
 /* ----------------------SECTION-VEGATABLES------------------------ */
 
+.section-vegetables {
+  margin-bottom: 80px;
+}
+
 .vegetables-title {
   text-align: center;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
@@ -169,6 +173,10 @@
 /* ----------------------SECTION-VEGATABLES-TABLET------------------------ */
 
 @media screen and (min-width: 768px) {
+  .section-vegetables {
+    margin-bottom: 100px;
+  }
+
   .vegetables-title {
     font-size: 28px;
     line-height: 1.16;
@@ -244,6 +252,10 @@
 /* ----------------------SECTION-VEGATABLES-DESKTOP------------------------ */
 
 @media screen and (min-width: 1280px) {
+  .section-vegetables {
+    margin-bottom: 124px;
+  }
+
   .vegetables-title {
     font-size: 40px;
     line-height: 1.1;
