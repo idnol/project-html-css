@@ -6,7 +6,7 @@
 
 .vegetables-title {
   text-align: center;
-  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 24px;
   font-family: DM Sans;
   font-style: normal;
@@ -21,7 +21,7 @@
 
 .vegetables-description {
   text-align: center;
-  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-family: DM Sans;
   font-style: normal;
@@ -49,7 +49,7 @@
   height: 443px;
 
   padding-top: 40px;
-  padding-bottom: 38px;
+  padding-bottom: 60px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -95,7 +95,7 @@
   line-height: 1.28;
   letter-spacing: -0.28px;
 
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .product-image-wrapper {
@@ -106,11 +106,24 @@
 }
 
 .product-pictrute {
+  display: block;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.product-pictrute img {
   position: absolute;
   top: 0;
   left: 0;
 
   width: 100%;
+  height: 100%;
+
+  object-fit: contain;
 }
 
 .product-price {
@@ -153,21 +166,29 @@
   border-radius: 50%;
   background-color: #fc8a11;
 
-  transform: rotate(-14deg);
-
   transition: background-color 250ms var(--cubic);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 65px;
+  height: 28px;
 }
 
 .vegetables-button-icon {
   margin-right: 4px;
   fill: var(--color-white);
-
-  transform: rotate(14deg);
 }
 
 .vegetables-button:hover,
 .vegetables-button:focus {
   background-color: var(--color-35);
+}
+
+.vegetables-button-name {
+  transform: rotate(-14deg);
 }
 
 /* ----------------------SECTION-VEGATABLES-TABLET------------------------ */
