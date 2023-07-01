@@ -6,6 +6,7 @@
   --color-38: #eaf7e5;
   --color-39: #f3f3f3;
   --color-40: #141414;
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
 }

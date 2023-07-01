@@ -1,0 +1,151 @@
+.callback {
+  /* padding-top: 80px; */
+  padding-bottom: 80px;
+}
+
+.wrapp-callback-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.callback-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.96px;
+  text-shadow: var(--shadow);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 321px;
+}
+
+.callback-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  text-shadow: var(--shadow);
+  text-align: center;
+  width: 321px;
+  margin-bottom: 40px;
+}
+
+.callback-form {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapp-callback-btn {
+  position: relative;
+  max-width: 100%;
+}
+
+.callback-input {
+  border-radius: 100px;
+  border: 1px solid rgba(20, 20, 20, 0.3);
+  padding-left: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  max-width: 335px;
+  font-size: 14px;
+  letter-spacing: -0.56px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color var(--cubic);
+}
+
+.callback-input:hover,
+.callback-input:focus {
+  border-color: #a1c487;
+}
+
+.wrapp-callback-btn:focus-within .callback-input {
+  border-color: 1px solid #a1c487;
+}
+
+.callback-btn {
+  position: absolute;
+  right: 0;
+  padding: 15px 35px;
+  border-radius: 100px;
+  background: var(--color-37);
+  color: var(--color-white);
+  font-size: 14px;
+  letter-spacing: -0.56px;
+  text-transform: capitalize;
+  width: 105px;
+  height: 48px;
+  transition: background-color var(--cubic);
+}
+
+.callback-btn:hover,
+.callback-btn:focus {
+  background-color: var(--color-35);
+}
+
+@media screen and (min-width: 768px) {
+  .callback {
+    /* padding-top: 100px; */
+    padding-bottom: 173px;
+  }
+
+  .wrapp-callback-text {
+    margin-bottom: 80px;
+  }
+
+  .callback-title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+    width: 499px;
+  }
+
+  .callback-text {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+    width: 499px;
+  }
+
+  .callback-form {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .callback {
+    /* padding-top: 124px; */
+    padding-bottom: 124px;
+  }
+
+  .callback-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapp-callback-text {
+    justify-content: left;
+    width: 614px;
+    margin-right: 77px;
+    margin-bottom: 0;
+  }
+
+  .callback-title {
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -1.92px;
+    text-align: left;
+    width: 614px;
+    margin-bottom: 40px;
+  }
+
+  .callback-text {
+    width: 523px;
+    text-align: left;
+  }
+}
