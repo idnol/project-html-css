@@ -40,11 +40,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 704px;
-    padding: 0 32px;
-  }
-  .section {
+  .section.how {
     padding: 100px 0;
   }
   .how-text {
@@ -91,10 +87,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1216px;
-  }
-  .section {
+  .section.how {
     padding: 124px 0;
   }
 
