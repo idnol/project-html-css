@@ -170,6 +170,8 @@
 }
 
 .button-container {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: end;
@@ -180,6 +182,10 @@
 .vegetables-button-icon {
   margin-right: 4px;
   fill: var(--color-white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  fill: var(--color-white);
 }
 
 .vegetables-button:hover,
@@ -189,6 +195,9 @@
 
 .vegetables-button-name {
   transform: rotate(-14deg);
+  position: absolute;
+  left: 18px;
+  bottom: 4px;
 }
 
 /* ----------------------SECTION-VEGATABLES-TABLET------------------------ */
@@ -267,6 +276,15 @@
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.72px;
+  }
+
+  .button-container {
+    width: 79px;
+    height: 37px;
+  }
+
+  .vegetables-button-name {
+    bottom: 6px;
   }
 }
 
