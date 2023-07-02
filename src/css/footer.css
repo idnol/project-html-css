@@ -8,14 +8,18 @@ width: 100%;
    justify-content: center;
    display: flex;
    column-gap: 20px;
+   list-style: none;
 }
 .footer-img{
     max-width: 335px;
     margin: 0;
 }
-.footer-anchorlink-button{
+.footer-anchorlink-a{
     background-color:#EAF7E5;
    
+}
+.footer-socialmedia-ul{
+    list-style: none;
 }
 .footer-logo{
     color: #141414;
