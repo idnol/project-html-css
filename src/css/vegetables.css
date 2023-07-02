@@ -1,0 +1,330 @@
+/* ----------------------SECTION-VEGATABLES------------------------ */
+
+.section-vegetables {
+  padding-bottom: 80px;
+}
+
+.vegetables-title {
+  text-align: center;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.vegetables-description {
+  text-align: center;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+
+  max-width: 335px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.vegetables-list {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.vegetables-item {
+  position: relative;
+
+  max-width: 335px;
+  height: 443px;
+
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  border-radius: 20px;
+  background: var(--color-38);
+}
+
+.vegetables-item:last-child {
+  margin-bottom: 0;
+  display: none;
+}
+
+.vegetables-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  width: 100%;
+  height: 100%;
+}
+
+.vegetables-name {
+  font-size: 24px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -0.96px;
+
+  margin-bottom: 8px;
+}
+
+.product-type {
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.28px;
+
+  margin-bottom: 36px;
+}
+
+.product-image-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 249px;
+}
+
+.product-pictrute {
+  display: block;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.product-pictrute img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.product-price {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+}
+
+/* ----------------------SECTION-VEGATABLES-BUTTON------------------------ */
+
+.vegetables-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+
+  text-align: center;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+
+  margin: 0 auto;
+
+  color: var(--color-white);
+
+  border-radius: 50%;
+  background-color: #fc8a11;
+
+  transition: background-color 250ms var(--cubic);
+}
+
+.button-container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 65px;
+  height: 28px;
+}
+
+.vegetables-button-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  fill: var(--color-white);
+}
+
+.vegetables-button:hover,
+.vegetables-button:focus {
+  background-color: var(--color-35);
+}
+
+.vegetables-button-name {
+  transform: rotate(-14deg);
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+
+/* ----------------------SECTION-VEGATABLES-TABLET------------------------ */
+
+@media screen and (min-width: 768px) {
+  .section-vegetables {
+    margin-bottom: 100px;
+  }
+
+  .vegetables-title {
+    font-size: 28px;
+    line-height: 1.16;
+    letter-spacing: -1.12px;
+  }
+
+  .vegetables-description {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+
+    max-width: 562px;
+  }
+
+  .vegetables-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .vegetables-item {
+    width: calc((100% - 20px) / 2);
+    max-width: 342px;
+    height: 465px;
+
+    padding-top: 64px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    margin-bottom: 0;
+  }
+
+  .vegetables-name {
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -1.12px;
+
+    margin-bottom: 8px;
+  }
+
+  .product-type {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.36px;
+
+    margin-bottom: 0;
+  }
+
+  .product-image-wrapper {
+    height: 261px;
+  }
+
+  .product-price {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+  }
+
+  .vegetables-button {
+    width: 114px;
+    height: 114px;
+
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+  }
+
+  .button-container {
+    width: 79px;
+    height: 37px;
+  }
+
+  .vegetables-button-name {
+    bottom: 6px;
+  }
+}
+
+/* ----------------------SECTION-VEGATABLES-DESKTOP------------------------ */
+
+@media screen and (min-width: 1280px) {
+  .section-vegetables {
+    margin-bottom: 124px;
+  }
+
+  .vegetables-title {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+  }
+
+  .vegetables-list {
+    row-gap: 24px;
+    column-gap: 24px;
+  }
+
+  .vegetables-item {
+    width: calc((100% - 48px) / 3);
+
+    max-width: 389px;
+    height: 465px;
+
+    padding-top: 64px;
+    padding-bottom: 77px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    margin-bottom: 0;
+  }
+
+  .vegetables-item:last-child {
+    display: block;
+  }
+
+  .vegetables-name {
+    font-size: 32px;
+    line-height: 1.18;
+    letter-spacing: -1.28px;
+  }
+}
