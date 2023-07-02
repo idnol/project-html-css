@@ -8,14 +8,18 @@ width: 100%;
    justify-content: center;
    display: flex;
    column-gap: 20px;
+   list-style: none;
 }
 .footer-img{
-    max-width: 335px;
+  
     margin: 0;
 }
 .footer-anchorlink-button{
     background-color:#EAF7E5;
    
+}
+.footer-socialmedia-ul{
+    list-style: none;
 }
 .footer-logo{
     color: #141414;
@@ -66,4 +70,10 @@ letter-spacing: -0.28px;
 width: 135px;
 margin: auto;
 margin-top: 20px;
+}
+@media screen and (min-width: 375px) {
+    .footer-img{
+  max-width: 335px;
+        margin: 0;
+    }
 }
