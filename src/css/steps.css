@@ -1,12 +1,11 @@
-.steps-wrapper {
-    padding: 40px 20px 0 20px;
-    background-image: url(../img/steps/dots-bg.png), linear-gradient(rgba(250, 243, 231, 1), rgba(250, 243, 231, 1));
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 40px;
-}
 
+.steps-wrapper{
+    padding: 40px 20px 0 20px;
+        background-image: url(/img/steps/el.png), linear-gradient(rgba(250, 243, 231, 1), rgba(250, 243, 231, 1));
+        background-repeat: repeat;
+        background-position: 5px 2px;
+        border-radius: 40px; 
+} 
 .steps-title {
     max-width: 295px;
     margin-bottom: 40px;
@@ -38,10 +37,8 @@
     line-height: 1.28;
     letter-spacing: -0.56px;
 }
-
-.steps-item::before {
-    content: '1';
-    display: inline-flex;
+.steps-number{
+display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -55,12 +52,6 @@
     letter-spacing: -0.72px;
     border-radius: 200px;
     background: var(--color-35);
-}
-.steps-item-second::before{
-    content: '2';
-}
-.steps-item-third::before {
-    content: '3';
 }
 
 .steps-image {
