@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   background: var(--color-white);
   color: var(--color-40);
   margin: 0;

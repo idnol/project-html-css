@@ -4,10 +4,138 @@
 Кнопки та відгуки - цe <ul>
 -->
 
-<section class='section hero'>
-  <div class='container'>
-    <div class='row'>
+<section class="section hero">
+  <div class="container">
+    <div class="hero-top">
+      <ul class="user-list list">
+        <li class="user-item">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/hero/desktop-user-1.jpg   1x,
+                ./img/hero/desktop-user-1@2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/tablet-user-1.jpg   1x,
+                ./img/hero/tablet-user-1@2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/hero/user-1.jpg 1x, ./img/hero/user-1@2.jpg 2x"
+            />
+            <img class="user-img" src="./img/hero/user-1.jpg" alt="дівчина" />
+          </picture>
+        </li>
+        <li class="user-item">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/hero/desktop-user-2.jpg   1x,
+                ./img/hero/desktop-user-2@2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/tablet-user-2.jpg   1x,
+                ./img/hero/tablet-user-2@2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/hero/user-2.jpg 1x, ./img/hero/user-2@2.jpg 2x"
+            />
+            <img class="user-img" src="./img/hero/user-2.jpg" alt="хлопець" />
+          </picture>
+        </li>
+        <li class="user-item">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/hero/desktop-user-3.jpg   1x,
+                ./img/hero/desktop-user-3@2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/tablet-user-3.jpg   1x,
+                ./img/hero/tablet-user-3@2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/hero/user-3.jpg 1x, ./img/hero/user-3@2.jpg 2x"
+            />
+            <img class="user-img" src="./img/hero/user-3.jpg" alt="дівчина" />
+          </picture>
+        </li>
+        <li class="user-item">
+          <div class="user-text-wrap">
+            <p class="user-item-2k">2K</p>
+            <p class="user-item-text">reviews</p>
+          </div>
+        </li>
+      </ul>
+      <h1 class="hero-title">
+        organic <span>vegetables</span> to your diet today!
+      </h1>
+      <p class="hero-text">
+        Our expertly curated vegetable baskets are made with the freshest,
+        highest quality vegetables available. Fresh Harvest Box has got you
+        covered. Fresh, high-quality vegetables in expertly curated vegetable
+        baskets delivered to you.
+      </p>
+      <button class="hero-btn" type="button"><span>shop now</span></button>
+    </div>
+    <div class="hero-bot">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/hero/desktop-hero.png   1x,
+            ./img/hero/desktop-hero@2.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero/tablet-hero.png   1x,
+            ./img/hero/tablet-hero@2.png 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./img/hero/hero.png 1x, ./img/hero/hero@2.png 2x"
+        />
+        <img
+          class="hero-img"
+          src="./img/hero/hero.png"
+          alt="дівчина в руках тримає капусті"
+        />
+      </picture>
 
+      <ul class="hashtags list">
+        <li class="hashtag-item">
+          <button class="hashtag-btn" type="button">#organic</button>
+        </li>
+        <li class="hashtag-item">
+          <button class="hashtag-btn" type="button">#products</button>
+        </li>
+        <li class="hashtag-item">
+          <button class="hashtag-btn" type="button">#basket</button>
+        </li>
+        <li class="hashtag-item">
+          <button class="hashtag-btn" type="button">#vegetables</button>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
