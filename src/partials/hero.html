@@ -9,34 +9,73 @@
     <div class="hero-top">
       <ul class="user-list list">
         <li class="user-item">
-          <img
-            class="user-img"
-            srcset="./img/hero/user-1@2.jpg 2x"
-            src="./img/hero/user-1.jpg"
-            alt=""
-            width="40"
-            height="40"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/hero/desktop-user-1.jpg   1x,
+                ./img/hero/desktop-user-1@2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/tablet-user-1.jpg   1x,
+                ./img/hero/tablet-user-1@2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/hero/user-1.jpg 1x, ./img/hero/user-1@2.jpg 2x"
+            />
+            <img class="user-img" src="./img/hero/user-1.jpg" alt="дівчина" />
+          </picture>
         </li>
         <li class="user-item">
-          <img
-            class="user-img"
-            srcset="./img/hero/user-2@2.jpg 2x"
-            src="./img/hero/user-2.jpg"
-            alt=""
-            width="40"
-            height="40"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/hero/desktop-user-2.jpg   1x,
+                ./img/hero/desktop-user-2@2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/tablet-user-2.jpg   1x,
+                ./img/hero/tablet-user-2@2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/hero/user-2.jpg 1x, ./img/hero/user-2@2.jpg 2x"
+            />
+            <img class="user-img" src="./img/hero/user-2.jpg" alt="хлопець" />
+          </picture>
         </li>
         <li class="user-item">
-          <img
-            class="user-img"
-            srcset="./img/hero/user-3@2.jpg 2x"
-            src="./img/hero/user-3.jpg"
-            alt=""
-            width="40"
-            height="40"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/hero/desktop-user-3.jpg   1x,
+                ./img/hero/desktop-user-3@2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/tablet-user-3.jpg   1x,
+                ./img/hero/tablet-user-3@2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/hero/user-3.jpg 1x, ./img/hero/user-3@2.jpg 2x"
+            />
+            <img class="user-img" src="./img/hero/user-3.jpg" alt="дівчина" />
+          </picture>
         </li>
         <li class="user-item">
           <div class="user-text-wrap">
@@ -54,17 +93,35 @@
         covered. Fresh, high-quality vegetables in expertly curated vegetable
         baskets delivered to you.
       </p>
-      <button class="hero-btn" type="button">shop now</button>
+      <button class="hero-btn" type="button"><span>shop now</span></button>
     </div>
     <div class="hero-bot">
-      <img
-        class="hero-img"
-        srcset="./img/hero/hero@2.png 2x"
-        src="../img/hero/hero.png"
-        alt=""
-        width="278"
-        height="228"
-      />
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/hero/desktop-hero.png   1x,
+            ./img/hero/desktop-hero@2.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero/tablet-hero.png   1x,
+            ./img/hero/tablet-hero@2.png 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./img/hero/hero.png 1x, ./img/hero/hero@2.png 2x"
+        />
+        <img
+          class="hero-img"
+          src="./img/hero/hero.png"
+          alt="дівчина в руках тримає капусті"
+        />
+      </picture>
+
       <ul class="hashtags list">
         <li class="hashtag-item">
           <button class="hashtag-btn" type="button">#organic</button>
