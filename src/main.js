@@ -1,3 +1,5 @@
+// list counter
+
 const list = document.querySelector('.js-steps');
 let count = 0;
 list.querySelectorAll('li').forEach((item) => {
