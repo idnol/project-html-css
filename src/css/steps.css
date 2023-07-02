@@ -1,0 +1,117 @@
+.steps-wrapper {
+    padding: 40px 20px 0 20px;
+    background-image: url(../img/steps/dots-bg.png), linear-gradient(rgba(250, 243, 231, 1), rgba(250, 243, 231, 1));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.steps-title {
+    max-width: 295px;
+    margin-bottom: 40px;
+    text-shadow: 0px 4px 70px  rgba(0, 0, 0, 0.10);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: -0.96px;
+    text-transform: uppercase;
+}
+
+.steps-list {
+    list-style: none;
+}
+
+.steps-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 21px;
+
+}
+
+.steps-item-text {
+    max-width: 151px;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+}
+
+.steps-item::before {
+    content: '1';
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 38px;
+    color: var(--color-40);
+    font-size: 18px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.72px;
+    border-radius: 200px;
+    background: var(--color-35);
+}
+.steps-item-second::before{
+    content: '2';
+}
+.steps-item-third::before {
+    content: '3';
+}
+
+.steps-image {
+    margin: 0 auto;
+}
+
+                        /* ------- MEDIA TABLET ------- */
+@media screen and (min-width: 768px) {
+.steps-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    padding: 40px 40px 0 0;
+}
+.steps-item:not(:last-child){
+    margin-bottom: 24px;
+}
+.steps-title{
+    padding-top: 40px;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -1.12px;
+    max-width: 274px;
+}
+.steps-item-text{
+        max-width: 176px;
+        }
+}
+                       /* ------- /MEDIA TABLET ------- */
+
+                        /* ------- MEDIA DESKTOP ------- */
+@media screen and (min-width: 1280px){
+.steps-wrapper {
+        gap: 110px;
+        padding: 40px 80px 0 80px;
+    }
+        .steps-item:not(:last-child) {
+            margin-bottom: 28px;
+        }
+        .steps-title {
+            font-size: 40px;
+            line-height: 1.10;
+            letter-spacing: -1.6px;
+            max-width: 512px;
+            margin-bottom: 44px;
+        }
+        .steps-item-text{
+            max-width: 283px;
+        }
+       .steps-item-text-second{
+            max-width: 166px;
+       }
+}
+                        /* ------- /MEDIA DESKTOP ------- */
