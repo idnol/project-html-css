@@ -1,12 +1,7 @@
-
-
 .container-modal {
-    width: 100%;
-    padding-left: 20px ;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-
 
 .backdrop {
   overflow: scroll;
@@ -27,8 +22,6 @@
   left: 50%;
   top: 20px;
   transform: translate(-50%);
-  width: 100%;
-  min-height: 903px;
   background: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -57,14 +50,12 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
-  
 }
 .modal-close-btn {
   cursor: pointer;
   display: flex;
   border: none;
   background: none;
-
 
   justify-content: center;
   align-items: center;
@@ -85,7 +76,6 @@
   flex-direction: column;
   gap: 12px;
   margin-bottom: 40px;
- 
 }
 .name-shopping {
   color: #141414;
@@ -130,7 +120,7 @@
   border: 1.5px solid #a1c487;
   border-radius: 4px;
   fill: #a1c487;
-  content: "";
+  content: '';
   width: 16px;
   height: 16px;
   cursor: pointer;
@@ -143,7 +133,6 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  
 }
 .name-input {
   width: 100%;
@@ -155,7 +144,7 @@
   background-color: transparent;
   outline: transparent;
 }
-.name-imput::placeholder {
+.name-input::placeholder {
   color: rgba(20, 20, 20, 0.5);
   font-size: 14px;
   font-family: DM Sans;
@@ -163,19 +152,18 @@
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.56px;
-  
 }
 .modal-form-message {
-    display: block;
+  display: block;
   width: 100%;
   height: 132px;
- padding: 0 24px;
+  padding: 0 24px;
   resize: none;
   border-radius: 20px;
   padding-top: 14px;
   outline: transparent;
   background-color: transparent;
-
+  margin-bottom: 6px;
   border: 1px solid rgba(20, 20, 20, 0.3);
 }
 .modal-form-message::placeholder {
@@ -186,7 +174,6 @@
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.56px;
-  
 }
 .btn-send-forma {
   cursor: pointer;
@@ -205,13 +192,108 @@
   border-color: #fc8a11;
   border: none;
 }
+.img-modal {
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  width: 94px;
+  height: 78px;
+  margin: 0;
+}
+.img-second {
+  display: none;
+}
 
 @media screen and (min-width: 375px) {
-    .container-modal {
-        width: 335px;
-        margin-right: auto;
-        margin-left: auto;
-        height: 100%;
-    }
+  .container-modal {
+    width: 335px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
-    
+
+@media screen and (min-width: 768px) {
+  .container-modal {
+    position: relative;
+    max-width: 728px;
+    padding: 40px;
+  }
+  .modal {
+    width: 703px;
+    padding: 40px;
+    overflow: hidden;
+  }
+  .text-modal {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+  }
+  .modal-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 28px;
+    height: 28px;
+  }
+  .name-shopping {
+    margin-top: 40px;
+  }
+  .shopping-list {
+    flex-direction: row;
+    gap: 12px;
+  }
+  .item-shopping {
+    width: 200px;
+    height: 250px;
+  }
+
+  .img-modal {
+    width: 100%;
+    height: 142px;
+    bottom: 14px;
+    right: 0;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .form-modal {
+    width: 360px;
+    height: 100%;
+  }
+  .img-second {
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    right: -154px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-modal {
+    width: 1240px;
+  }
+  .modal {
+    width: 891px;
+  }
+  .item-shopping {
+    width: 257px;
+    height: 308px;
+  }
+  .name-shopping {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.96px;
+    margin-bottom: 8px;
+  }
+  .img-modal {
+    width: 100%;
+    height: 200px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .img-second {
+    bottom: -3px;
+    right: 7px;
+  }
+}
