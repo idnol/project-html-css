@@ -83,7 +83,6 @@
   letter-spacing: -0.56px;
   text-transform: uppercase;
   margin-bottom: 8px;
-  padding: 0;
   transition: background-color var(--cubic), color var(--cubic);
 }
 .hero-btn span {
@@ -131,7 +130,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 64px;
+    padding-top: 66px;
     padding-bottom: 32px;
   }
   .user-list {
@@ -170,12 +169,11 @@
     letter-spacing: -0.96px;
   }
   .hero-img {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
   .hashtags {
     gap: 8px 4px;
     max-width: 214px;
-    margin-top: -30px;
   }
   .hashtag-btn {
     letter-spacing: -0.48px;
@@ -185,7 +183,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    padding-top: 70px;
+    padding-top: 134px;
     padding-bottom: 32px;
   }
   .hero .container {
@@ -224,7 +222,6 @@
   .hashtags {
     gap: 8px;
     max-width: 266px;
-    margin-top: 0;
   }
   .hashtag-btn {
     padding: 12px 32px;
