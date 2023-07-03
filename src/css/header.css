@@ -27,6 +27,19 @@
 .header-logo-svg {
   fill: #77ac63;
 }
+.mobile-menu-open-btn {
+  background-color: transparent;
+  margin-left: auto;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding: 0;
+}
+.open-menu-icon {
+  fill: #77ac63;
+}
+.header-shopping-btn {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .mobile-menu-open-btn {
