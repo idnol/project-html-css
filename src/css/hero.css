@@ -83,6 +83,7 @@
   letter-spacing: -0.56px;
   text-transform: uppercase;
   margin-bottom: 8px;
+  padding: 0;
   transition: background-color var(--cubic), color var(--cubic);
 }
 .hero-btn span {
@@ -169,11 +170,12 @@
     letter-spacing: -0.96px;
   }
   .hero-img {
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
   .hashtags {
     gap: 8px 4px;
     max-width: 214px;
+    margin-top: -30px;
   }
   .hashtag-btn {
     letter-spacing: -0.48px;
@@ -222,6 +224,7 @@
   .hashtags {
     gap: 8px;
     max-width: 266px;
+    margin-top: 0;
   }
   .hashtag-btn {
     padding: 12px 32px;
