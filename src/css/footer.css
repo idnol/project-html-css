@@ -74,8 +74,8 @@
     
     
     .footer-soc-link:hover , .footer-soc-link:focus{
-    border-color: var(--button-accent-color);
-    color: var(--button-accent-color);
+    border-color: var(#A1C487);
+    color: var(#A1C487);
     }
     
     .footer-soc-icon{
@@ -94,7 +94,7 @@
     }
     
     .footer-tel-link:hover , .footer-tel-link:focus{
-    color: var(--button-color);
+    color: var(#A1C487);
     }
      
     .footer-address-link {
@@ -110,7 +110,7 @@
     }
     
     .footer-address-link:hover , .footer-address-link:focus{
-    color: var(--button-color);
+    color: var(#A1C487);
     }
     
     .footer-address-item:first-child {
