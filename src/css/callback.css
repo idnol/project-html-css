@@ -195,13 +195,13 @@
     line-height: 1.04;
     letter-spacing: -1.92px;
     text-align: left;
-
     margin-bottom: 40px;
   }
 
   .callback-text {
     width: 523px;
     text-align: left;
+    margin-bottom: 80px;
   }
 
   .callback-form {
