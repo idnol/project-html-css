@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 48px;
+  padding-top: 98px;
   padding-bottom: 20px;
   background-color: var(--color-35);
 }
@@ -130,7 +130,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 66px;
+    padding-top: 116px;
     padding-bottom: 32px;
   }
   .user-list {
@@ -183,7 +183,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    padding-top: 134px;
+    padding-top: 184px;
     padding-bottom: 32px;
   }
   .hero .container {

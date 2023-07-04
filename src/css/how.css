@@ -1,5 +1,6 @@
 .section.how {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
 .how-text {
   display: flex;
@@ -47,7 +48,8 @@
 
 @media screen and (min-width: 768px) {
   .section.how {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 40px;
   }
   .how-text {
     row-gap: 40px;
@@ -94,7 +96,8 @@
 
 @media screen and (min-width: 1280px) {
   .section.how {
-    padding: 124px 0;
+    padding-top: 124px;
+    padding-bottom: 64px;
   }
 
   .how-text-title {

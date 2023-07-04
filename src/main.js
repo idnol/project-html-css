@@ -61,10 +61,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function toggleMenu() {
       refs.menu.classList.toggle('is-hidden');
+      refs.openMenuBtn.classList.toggle('d-none');
+      refs.closeMenuBtn.classList.toggle('d-none');
       document.body.classList.toggle('no-scroll');
     }
   })();
-});
 
+  document.querySelectorAll('.js-nav-list li').forEach(function(item) {
+    item.addEventListener('click', function() {
+      document.querySelectorAll('[data-menu]').forEach(function(menu) {
+        menu.classList.toggle('is-hidden');
+      });
+      document.querySelectorAll('[data-menu-close]').forEach(function(close) {
+        close.classList.toggle('d-none');
+      });
+      document.querySelectorAll('[data-menu-open]').forEach(function(open) {
+        open.classList.toggle('d-none');
+      });
+    });
+  });
 });
-
