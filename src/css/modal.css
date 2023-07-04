@@ -70,7 +70,14 @@
   padding: 0;
   fill: #141414;
 }
-
+.modal-close-btn svg {
+  transition: 250ms ease-in;
+}
+.modal-close-btn:hover svg,
+.modal-close-btn:focus svg
+{
+  fill: var(--color-35);
+}
 .shopping-list {
   margin: 0;
   list-style: none;
@@ -132,6 +139,9 @@
   fill: none;
 }
 
+.form-modal__wrapper {
+  position: relative;
+}
 .form-modal {
   display: flex;
   flex-direction: column;
@@ -225,6 +235,7 @@
     width: 703px;
     padding: 40px;
   }
+
   .text-modal {
     font-size: 40px;
     font-weight: 500;
@@ -238,14 +249,6 @@
     top: 20px;
     width: 28px;
     height: 28px;
-  }
-  .modal-close-btn svg {
-    transition: 250ms ease-in;
-  }
-  .modal-close-btn:hover svg,
-  .modal-close-btn:focus svg
-  {
-    fill: var(--color-35);
   }
   .name-shopping {
     margin-top: 40px;
@@ -267,6 +270,7 @@
     padding-left: 14px;
     padding-right: 14px;
   }
+
   .form-modal {
     width: 360px;
     height: 100%;
@@ -274,8 +278,12 @@
   .img-second {
     display: block;
     position: absolute;
-    bottom: -10px;
-    right: -154px;
+    bottom: -40px;
+    right: -40px;
+    width: 263px;
+    height: 100%;
+    background: url(../img/modal/img-girl.png) no-repeat;
+    background-size: cover;
   }
 }
 
@@ -303,7 +311,8 @@
     padding-right: 7px;
   }
   .img-second {
-    bottom: -3px;
-    right: 7px;
+    bottom: -40px;
+    right: -40px;
+    width: 414px;
   }
 }
