@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const modal = document.querySelector('.data-modal');
   openModal.forEach(function(element) {
     element.addEventListener('click', function() {
-      modal.classList.remove('visually-hidden');
+      modal.classList.remove('is-hidden');
     });
   });
   closeModal.forEach(function(element) {
     element.addEventListener('click', function() {
-      modal.classList.add('visually-hidden');
+      modal.classList.add('is-hidden');
     });
   });
 });
