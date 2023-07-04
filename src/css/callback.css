@@ -96,6 +96,7 @@
   height: 388px;
   background-color: #faf3e7;
   border-radius: 40px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .wrapp-callback-img::before {
