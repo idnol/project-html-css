@@ -140,9 +140,6 @@
 .icon-check-modal.active svg {
   display: block;
 }
-/*.input-checkbox:checked + .label-check .icon-check-modal {*/
-/*  fill: none;*/
-/*}*/
 
 .form-modal__wrapper {
   position: relative;
