@@ -19,6 +19,7 @@
   pointer-events: none;
 }
 .modal {
+  max-width: 335px;
   overflow: scroll;
   position: absolute;
   left: 50%;
@@ -86,17 +87,16 @@
   flex-direction: column;
   gap: 12px;
   margin-bottom: 40px;
+  font-family: DM Sans;
 }
 .name-shopping {
   color: #141414;
   font-size: 18px;
-  font-family: DM Sans;
+
   font-style: normal;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: -0.72px;
-  margin-top: 20px;
-  margin-left: 20px;
   margin-bottom: 2px;
 }
 
@@ -107,16 +107,16 @@
   background-color: #faf3e7;
   border-radius: 20px;
   position: relative;
+  padding: 20px;
+  cursor: pointer;
 }
 .text-description {
   color: #141414;
   font-size: 14px;
-  font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.28px;
-  margin-left: 20px;
 }
 .icon-check-modal {
   position: absolute;
@@ -125,7 +125,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   letter-spacing: 0.04em;
   border: 1.5px solid #a1c487;
   border-radius: 4px;
@@ -135,9 +134,15 @@
   height: 16px;
   cursor: pointer;
 }
-.input-checkbox:checked + .label-check .icon-check-modal {
-  fill: none;
+.icon-check-modal svg {
+  display: none;
 }
+.icon-check-modal.active svg {
+  display: block;
+}
+/*.input-checkbox:checked + .label-check .icon-check-modal {*/
+/*  fill: none;*/
+/*}*/
 
 .form-modal__wrapper {
   position: relative;
@@ -201,9 +206,17 @@
   width: 92px;
   height: 42px;
   border-radius: 100px;
-  background-color: #fc8a11;
-  border-color: #fc8a11;
+  background-color: var(--color-37);
+  border-color: var(--color-37);
+  transition: 250ms ease-in;
   border: none;
+
+}
+.btn-send-forma:hover,
+.btn-send-forma:focus
+{
+  background: var(--color-35);
+  border-color: var(--color-35);
 }
 .img-modal {
   position: absolute;
@@ -232,10 +245,13 @@
     padding: 40px;
   }
   .modal {
+    max-width: unset;
     width: 703px;
     padding: 40px;
   }
-
+  .item-shopping {
+    padding: 40px 20px;
+  }
   .text-modal {
     font-size: 40px;
     font-weight: 500;
@@ -250,9 +266,9 @@
     width: 28px;
     height: 28px;
   }
-  .name-shopping {
-    margin-top: 40px;
-  }
+  /*.name-shopping {*/
+  /*  margin-top: 40px;*/
+  /*}*/
   .shopping-list {
     flex-direction: row;
     gap: 12px;
@@ -284,6 +300,15 @@
     height: 100%;
     background: url(../img/modal/img-girl.png) no-repeat;
     background-size: cover;
+  }
+  .btn-send-forma {
+    height: 48px;
+  }
+  .name-input {
+    height: 48px;
+  }
+  .modal-form-message {
+    height: 145px;
   }
 }
 
