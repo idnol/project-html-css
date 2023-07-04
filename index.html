@@ -6,18 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veggieboost || online shop</title>
     
-    <script type="module" crossorigin src="/project-html-css/assets/index-9b96f15f.js"></script>
-    <link rel="stylesheet" href="/project-html-css/assets/index-96095843.css">
+    <script type="module" crossorigin src="/project-html-css/assets/index-8b3d57c7.js"></script>
+    <link rel="stylesheet" href="/project-html-css/assets/index-5028b685.css">
   </head>
   <body>
     <!--    empty-->
-    <header class='header'>
-  <div class='container'>
-    <div class='row'>
-
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav visually-hidden">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#howitworks">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a href="#vegetables">Vegetables</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-mob">
+      <a class="logo link" href="">
+        <svg class="logo-svg" width="16" height="16">
+          <use href="../img/vegetables/svg/header.svg#icon-vector"></use>
+        </svg>
+        <span class="logo-text">VEGGIEBOOST</span>
+      </a>
+      <button type="button" class="button" data-menu-open>
+        <svg class="menu-svg" width="24" height="24">
+          <use href="../img/vegetables/svg/header.svg#icon-gg_menu-left"></use>
+        </svg>
+      </button>
     </div>
   </div>
+  <div class="mob-menu is-hidden" data-menu>
+    <div class="header-mob-open">
+      <a class="logo link" href="">
+        <svg class="logo-svg" width="16" height="16">
+          <use href="../img/vegetables/svg/header.svg#icon-vector"></use>
+        </svg>
+        <span class="logo-text">VEGGIEBOOST</span>
+      </a>
+      <button type="button" class="button" data-menu-close>
+        <svg class="menu-svg" width="24" height="24">
+          <use href="../img/vegetables/svg/header.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list list">
+        <li class="nav-item">
+          <a class="nav-text link" href="#howitworks">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-text link" href="#vegetables">Vegetables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-text link" href="#contacts">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">
+            <svg class="shop-svg" width="20" height="20">
+              <use
+                href="../img/vegetables/svg/header.svg#icon-shopping-cart"
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
+<script>
+  (() => {
+    const refs = {
+      openMenuBtn: document.querySelector('[data-menu-open]'),
+      closeMenuBtn: document.querySelector('[data-menu-close]'),
+      menu: document.querySelector('[data-menu]'),
+    };
+
+    refs.openMenuBtn.addEventListener('click', toggleMenu);
+    refs.closeMenuBtn.addEventListener('click', toggleMenu);
+
+    function toggleMenu() {
+      refs.menu.classList.toggle('is-hidden');
+      document.body.classList.toggle('no-scroll');
+    }
+  })();
+</script>
 
     <main class='main'>
       <!--      Іван-->
