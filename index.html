@@ -6,146 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veggieboost || online shop</title>
     
-    <script type="module" crossorigin src="/project-html-css/assets/index-48feb590.js"></script>
-    <link rel="stylesheet" href="/project-html-css/assets/index-8213f207.css">
+    <script type="module" crossorigin src="/project-html-css/assets/index-35d792ab.js"></script>
+    <link rel="stylesheet" href="/project-html-css/assets/index-3ca8be69.css">
   </head>
   <body>
-    <!--    empty-->
     <header class="header">
   <div class="container header-container">
     <nav class="header-nav">
       <ul class="header-nav-list list">
         <li class="header-nav-item">
-          <a class="header-nav-link link current" href="">How It Works</a>
+          <a class="header-nav-link link current" href="#how">How It Works</a>
         </li>
         <li class="header-item">
-          <a class="header-nav-link link" href="">Vegetables</a>
+          <a class="header-nav-link link" href="#products">Vegetables</a>
         </li>
         <li class="header-item">
-          <a class="header-nav-link link" href="">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="header-logo-container">
-      <span class="header-logo-span">
-        <svg class="header-logo-svg" width="16" height="16">
-          <use href="./img/icons.svg#icon-vector-4"></use>
-        </svg>
-      </span>
-      <a class="header-logo-link link" href="./index.html">Veggieboost</a>
-    </div>
-    <button class="mobile-menu-open-btn" type="button">
-      <svg class="open-menu-icon" width="24" height="24">
-        <use href="./img/icons.svg#icon-gg_menu-left"></use>
-      </svg>
-    </button>
-    <button class="header-shopping-btn">
-      <svg class="header-shopping-icon" width="20" height="20">
-        <use href="./img/icons.svg#icon-shopping-cart"></use>
-      </svg>
-    </button>
-  </div>
-
-<header class="header">
-  <div class="container header-container">
-    <nav class="nav visually-hidden">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#howitworks">How It Works</a>
-        </li>
-        <li class="nav-item">
-          <a href="#vegetables">Vegetables</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contacts">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header-mob">
-      <a class="logo link" href="">
-        <svg class="logo-svg" width="16" height="16">
-          <use href="../img/vegetables/svg/header.svg#icon-vector"></use>
-        </svg>
-        <span class="logo-text">VEGGIEBOOST</span>
-      </a>
-      <button type="button" class="button" data-menu-open>
-        <svg class="menu-svg" width="24" height="24">
-          <use href="../img/vegetables/svg/header.svg#icon-gg_menu-left"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div class="mob-menu is-hidden" data-menu>
-    <div class="header-mob-open">
-      <a class="logo link" href="">
-        <svg class="logo-svg" width="16" height="16">
-          <use href="../img/vegetables/svg/header.svg#icon-vector"></use>
-        </svg>
-        <span class="logo-text">VEGGIEBOOST</span>
-      </a>
-      <button type="button" class="button" data-menu-close>
-        <svg class="menu-svg" width="24" height="24">
-          <use href="../img/vegetables/svg/header.svg#icon-x"></use>
-        </svg>
-      </button>
-    </div>
-    <nav class="nav">
-      <ul class="nav-list list">
-        <li class="nav-item">
-          <a class="nav-text link" href="#howitworks">How It Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-text link" href="#vegetables">Vegetables</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-text link" href="#contacts">Contacts</a>
-        </li>
-        <li class="nav-item">
-          <a class="link" href="">
-            <svg class="shop-svg" width="20" height="20">
-              <use
-                href="../img/vegetables/svg/header.svg#icon-shopping-cart"
-              ></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<script>
-  (() => {
-    const refs = {
-      openMenuBtn: document.querySelector('[data-menu-open]'),
-      closeMenuBtn: document.querySelector('[data-menu-close]'),
-      menu: document.querySelector('[data-menu]'),
-    };
-
-    refs.openMenuBtn.addEventListener('click', toggleMenu);
-    refs.closeMenuBtn.addEventListener('click', toggleMenu);
-
-    function toggleMenu() {
-      refs.menu.classList.toggle('is-hidden');
-      document.body.classList.toggle('no-scroll');
-    }
-  })();
-</script>
-
-
-    <!-- header-test-Vlad -->
-    <header class="header">
-  <div class="container header-container">
-    <nav class="header-nav">
-      <ul class="header-nav-list list">
-        <li class="header-nav-item">
-          <a class="header-nav-link link current" href="">How It Works</a>
-        </li>
-        <li class="header-item">
-          <a class="header-nav-link link" href="">Vegetables</a>
-        </li>
-        <li class="header-item">
-          <a class="header-nav-link link" href="">Contacts</a>
+          <a class="header-nav-link link" href="#contacts">Contacts</a>
         </li>
       </ul>
     </nav>
@@ -158,21 +34,49 @@
       </span>
       <a class="header-logo-link link" href="./index.html">Veggieboost</a>
     </div>
-    <button class="mobile-menu-open-btn" type="button">
+    <button class="mobile-menu-open-btn" data-menu-open type="button">
       <svg class="open-menu-icon" width="24" height="24">
         <use href="/project-html-css/assets/header-test-icons-81dbbd41.svg#icon-gg_menu-left"></use>
       </svg>
     </button>
-    <button class="header-shopping-btn">
+    <button class="header-shopping-btn js-open-modal">
       <svg class="header-shopping-icon" width="20" height="20">
         <use href="/project-html-css/assets/header-test-icons-81dbbd41.svg#icon-shopping-cart"></use>
       </svg>
     </button>
+    <button type="button" class="mobile-menu-close-button d-none" data-menu-close>
+      <svg class="mobile-menu-close-svg" width="24" height="24">
+        <use href="../img/header-test-icons.svg#icon-x"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mob-menu is-hidden" data-menu>
+    <nav class="nav">
+      <ul class="nav-list js-nav-list list">
+        <li class="nav-item">
+          <a class="nav-text link" href="#how">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-text link" href="#products">Vegetables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-text link" href="#contacts">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">
+            <svg class="shop-svg" width="20" height="20">
+              <use href="../img/header-test-icons.svg#icon-shopping-cart"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
+<!-- <script defer src="../main.js"></script> -->
+
 
     <main class="main">
-      <!--      Іван-->
       <!--
 Зелений фон на весь екран.
 Зображення з дівченою робимо через img (не в стилях)
@@ -291,7 +195,6 @@
   </div>
 </section>
 
-      <!--      Владислав & Катя-->
       <section class="section how" id="how">
   <div class="container">
     <!--      Владислав -->
@@ -375,7 +278,6 @@
   </div>
 </section>
 
-      <!--      Роман-->
       <!----------------------SECTION-VEGATABLES------------------------>
 
 <section class="section-vegetables" id="products">
@@ -656,7 +558,6 @@
   </div>
 </section>
 
-      <!--      Антоніна-->
       <!--
 Recall - цe кнопка Submit, можна зробити через мінусовий margin-left наїджання на інпут
 -->
@@ -717,7 +618,7 @@ Recall - цe кнопка Submit, можна зробити через міну�
 </section>
 
     </main>
-    <!--    Михайло-->
+
     <footer class="footer">
   <div class="container">
     <div class='row'>
@@ -740,9 +641,9 @@ Recall - цe кнопка Submit, можна зробити через міну�
        </div>
 
         <ul class="footer-list list">
-          <li class="footer-item"><a href="#how-it-works" class="footer-link link">How It Works</a></li>
-          <li class="footer-item"><a href="#vegetables" class="footer-link link">Vegetables</a></li>
-          <li class="footer-item"><a href="contacts" class="footer-link link">Contacts</a></li>
+          <li class="footer-item"><a href="#how" class="footer-link link">How It Works</a></li>
+          <li class="footer-item"><a href="#products" class="footer-link link">Vegetables</a></li>
+          <li class="footer-item"><a href="#contacts" class="footer-link link">Contacts</a></li>
         </ul>
      </div>
 
@@ -787,7 +688,6 @@ Recall - цe кнопка Submit, можна зробити через міну�
     </div>
   </div>
  </footer>
-    <!--    Олег-->
     <div class="backdrop data-modal is-hidden">
   <div class="modal container">
     <div class="modal-title">
@@ -947,10 +847,6 @@ Recall - цe кнопка Submit, можна зробити через міну�
   </div>
 </div>
 
-    <!--    empty-->
-    <div class='mobile-menu'>
-
-</div>
 
     
   </body>
