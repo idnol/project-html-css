@@ -43,8 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
           basket.splice(index, 1);
         }
       }
-
-      console.log(basket);
       choice.value = basket.join(', ');
     });
   });
