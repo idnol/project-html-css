@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
       modal.classList.remove('visually-hidden');
     });
   });
-  closeModal.addEventListener('click', function() {
-    modal.classList.add('visually-hidden');
+  closeModal.forEach(function(element) {
+    element.addEventListener('click', function() {
+      modal.classList.add('visually-hidden');
+    });
   });
 });
