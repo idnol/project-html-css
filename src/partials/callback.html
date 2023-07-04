@@ -2,10 +2,66 @@
 Recall - цe кнопка Submit, можна зробити через мінусовий margin-left наїджання на інпут
 -->
 
-<section class='section callback' id='contacts'>
-  <div class='container'>
-    <div class='row'>
+<section class="section callback" id="contacts">
+  <div class="container">
+    <div class="row callback-row">
+      <div class="wrapp-callback">
+        <div class="wrapp-callback-text">
+          <h2 class="callback-title">Fresh Harvest Box has got you covered</h2>
+          <p class="callback-text">
+            Our boxes are packed with delicious, nutritious vegetables, perfect
+            for anyone looking to eat healthier or support local farmers. Order
+            your box today and start enjoying the best that nature has to offer!
+          </p>
+        </div>
 
+        <form class="callback-form">
+          <label for="user-tel" class="user-tel"></label>
+          <div class="wrapp-callback-btn">
+            <input
+              class="callback-input"
+              type="tel"
+              name="phone"
+              id="user-tel"
+              pattern="\+380 \([0-9]{2}\) [0-9]{3}[0-9]{2}[0-9]{2}"
+              placeholder="+380 ()"
+              required
+            />
+            <button type="submit" class="callback-btn">Recall</button>
+          </div>
+        </form>
+      </div>
+      <div class="wrapp-callback-img">
+        <picture>
+          <source
+            srcset="
+              ./img/callback-img/callback-img.png    1x,
+              ./img/callback-img/callback-img-2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/callback-img/callback-img-tab.png    1x,
+              ./img/callback-img/callback-img-tab-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/callback-img/callback-img-mob.png    1x,
+              ./img/callback-img/callback-img-mob-2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="callback-img"
+            src="./img/callback-img/callback-img-mob.png"
+            alt="girl holding broccoli"
+            width="629"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>

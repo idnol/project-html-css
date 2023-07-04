@@ -130,7 +130,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 64px;
+    padding-top: 66px;
     padding-bottom: 32px;
   }
   .user-list {
@@ -183,7 +183,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    padding-top: 70px;
+    padding-top: 134px;
     padding-bottom: 32px;
   }
   .hero .container {
