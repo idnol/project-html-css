@@ -8,94 +8,140 @@
         </svg>
       </button>
     </div>
-    <ul class="shopping-list">
-      <li class="item-shopping">
+    <ul class="shopping-list js-basket-list">
+      <li class="item-shopping js-item-basket">
         <h3 class="name-shopping">Cabbage Basket</h3>
         <p class="text-description">Plant</p>
         <div class="img-modal">
-          <img
-            srcset="./img/modal/cabbage@2x.png 2x"
-            src="../img/modal/cabbage.png"
-            alt="Cabbage Basket"
-            width="100%"
-            height="100%"
-          />
+          <picture>
+            <source
+              srcset="
+              ./img/modal/cabbage-desk-min.png    1x,
+              ./img/modal/cabbage-desk@x2-min.png 2x
+            "
+              media="(min-width: 1280px)"
+              width='243'
+            />
+            <source
+              srcset="
+              ./img/modal/cabbage-tab-min.png    1x,
+              ./img/modal/cabbage-tab@x2-min.png 2x
+            "
+              media="(min-width: 768px)"
+              width='172'
+            />
+            <source
+              srcset="
+              ./img/modal/cabbage.png    1x,
+              ./img/modal/cabbage@2x.png 2x
+            "
+              media="(max-width: 767px)"
+              width="94"
+            />
+            <img
+              class="callback-img"
+              src="./img/modal/cabbage.png"
+              alt="Cabbage Basket"
+              width="94"
+            />
+          </picture>
         </div>
-
-        <input
-          type="checkbox"
-          id="user-shopping-1"
-          value="true"
-          class="input-checkbox visually-hidden"
-          name="user-shopping"
-        />
-        <label for="user-shopping-1" class="label-check">
-          <span class="icon-check-modal">
+        <span class="icon-check-modal js-basket-add">
             <svg class="icon-check-svg" width="18" height="18">
               <use href="./img/modal/sprite.svg#icon-Group"></use>
             </svg>
-          </span>
-        </label>
+        </span>
       </li>
-      <li class="item-shopping">
+      <li class="item-shopping js-item-basket">
         <h3 class="name-shopping">Tomato Basket</h3>
         <p class="text-description">Plant</p>
         <div class="img-modal">
-          <img
-            srcset="./img/modal/tomato@2x.png 2x"
-            src="./img/modal/tomato.png"
-            alt="Tomato Basket"
-            width="100%"
-            height="100%"
-          />
+          <picture>
+            <source
+              srcset="
+              ./img/modal/tomato-desk-min.png    1x,
+              ./img/modal/tomato-desk@x2-min.png 2x
+            "
+              media="(min-width: 1280px)"
+              width='243'
+            />
+            <source
+              srcset="
+              ./img/modal/tomato-tab-min.png    1x,
+              ./img/modal/tomato-tab@x2-min.png 2x
+            "
+              media="(min-width: 768px)"
+              width='172'
+            />
+            <source
+              srcset="
+              ./img/modal/tomato.png    1x,
+              ./img/modal/tomato@2x.png 2x
+            "
+              media="(max-width: 767px)"
+              width="94"
+            />
+            <img
+              class="callback-img"
+              src="./img/modal/tomato.png"
+              alt="Cabbage Basket"
+              width="94"
+            />
+          </picture>
         </div>
-
-        <input
-          type="checkbox"
-          id="user-shopping-2"
-          value="true"
-          class="input-checkbox visually-hidden"
-          name="user-shopping"
-        />
-        <label for="user-shopping-2" class="label-check">
-          <span class="icon-check-modal">
+        <span class="icon-check-modal js-basket-add">
             <svg class="icon-check-svg" width="18" height="18">
               <use href="./img/modal/sprite.svg#icon-Group"></use>
             </svg>
-          </span>
-        </label>
+        </span>
       </li>
-      <li class="item-shopping">
+      <li class="item-shopping js-item-basket">
         <h3 class="name-shopping">Vegetables Basket</h3>
         <p class="text-description">Plant</p>
         <div class="img-modal">
-          <img
-            srcset="./img/modal/vegetables-basket@2x.png 2x"
-            src="./img/modal/vegetables-basket.png"
-            alt="vegetables basket"
-            width="100%"
-            height="100%"
-          />
+          <picture>
+            <source
+              srcset="
+              ./img/modal/vegetables-desk-min.png    1x,
+              ./img/modal/vegetables-desk@x2-min.png 2x
+            "
+              media="(min-width: 1280px)"
+              width='243'
+            />
+            <source
+              srcset="
+              ./img/modal/vegetables-tab-min.png    1x,
+              ./img/modal/vegetables-tab@x2-min.png 2x
+            "
+              media="(min-width: 768px)"
+              width='172'
+            />
+            <source
+              srcset="
+              ./img/modal/vegetables-basket.png    1x,
+              ./img/modal/vegetables-basket@2x.png 2x
+            "
+              media="(max-width: 767px)"
+              width="94"
+            />
+            <img
+              class="callback-img"
+              src="./img/modal/vegetables-basket.png"
+              alt="Cabbage Basket"
+              width="94"
+            />
+          </picture>
         </div>
-
-        <input
-          type="checkbox"
-          id="user-shopping-3"
-          value="true"
-          class="input-checkbox visually-hidden"
-          name="user-shopping"
-        />
-        <label for="user-shopping-3" class="label-check">
-          <span class="icon-check-modal">
+        <span class="icon-check-modal js-basket-add">
             <svg class="icon-check-svg" width="18" height="18">
-              <use href="../img/modal/sprite.svg#icon-Group"></use>
+              <use href="./img/modal/sprite.svg#icon-Group"></use>
             </svg>
-          </span>
-        </label>
+        </span>
       </li>
     </ul>
     <div class='form-modal__wrapper'>
       <form class="form-modal">
+        <input type='hidden' value='' class='js-choice'>
         <input
           name="user-full-name"
           type="text"
@@ -133,15 +179,7 @@
         <button type="submit" class="btn-send-forma">Submit</button>
       </form>
 
-      <div class="img-second">
-<!--        <img-->
-<!--          srcset="./img/modal/img-girl@2x.png 2x"-->
-<!--          src="./img/modal/img-girl.png"-->
-<!--          alt="girl"-->
-<!--          width="100%"-->
-<!--          height="100%"-->
-<!--        />-->
-      </div>
+      <div class="img-second"></div>
     </div>
   </div>
 </div>
