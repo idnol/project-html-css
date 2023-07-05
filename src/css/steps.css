@@ -4,8 +4,8 @@
     position: relative;
     padding: 40px 20px 0 20px;
     background-color: #FAF3E7;
-    border-radius: 40px; 
-    
+    border-radius: 40px;
+
 }
 .steps-wrapper::before{
     content: '';
