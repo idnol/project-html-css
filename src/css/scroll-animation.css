@@ -1,0 +1,86 @@
+/* scroll */
+html {
+  scroll-behavior: smooth;
+}
+.to-top {
+  background-color: var(--color-35);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+.to-top:hover {
+  background-color: var(--color-37);
+  scale: 105%;
+}
+.scroll {
+  fill: var(--color-39);
+  transform: rotate(225deg);
+}
+/* hero button */
+.hero-btn:hover span,
+.hero-btn:focus span {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.hashtag-btn:hover,
+.hashtag-btn:focus {
+  scale: 105%;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.hashtag-btn {
+  transition: scale 400ms;
+}
+
+/* vegie animation */
+.vegetables-item:hover {
+  scale: 105%;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.vegetables-item {
+  transition: scale 400ms;
+}
+.vegetables-button:hover,
+.vegetables-button:focus {
+  scale: 105%;
+  transition: 0.5s;
+}
+.vegetables-button {
+  transition: scale 400ms;
+}
+/* modal */
+.item-shopping:hover {
+  scale: 105%;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: scale 400ms;
+}
+.item-shopping {
+  transition: scale 400ms;
+}
+.btn-send-forma:hover,
+.btn-send-forma:focus {
+  scale: 105%;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: scale 400ms;
+}
