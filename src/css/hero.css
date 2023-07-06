@@ -190,6 +190,9 @@
   .hero .container {
     display: flex;
   }
+  .hero-title {
+    width: 672px;
+  }
   .user-item {
     width: 70px;
     height: 70px;
